@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-    //screenchots or gif
+    //screenshots or gif
 </p>
 
 ## Introduction
@@ -24,7 +24,7 @@
 * User Authentication: 
 
 <p align="center">
-    //screenchots or gif
+    //screenshots or gif
 </p>
 
 <a id="prerequisites"></a>
@@ -32,10 +32,12 @@
 
     Android Studio Jellyfish | 2023.3.1 (https://developer.android.com/studio/releases/past-releases/as-jellyfish-release-notes)
     Firebase account for authentication, image storage, and database setup (https://firebase.google.com)
+    Firebase CLI reference for MacOS (https://firebase.google.com/docs/cli#install-cli-mac-linux)
+    FlutterFire CLI (https://firebase.flutter.dev/docs/cli/)
 
 ## Installation
 
-To run the Threads Clone on your local machine, follow these steps:
+To run the E-Commerce Market on your local machine, follow these steps:
 
 ```bash
 # Clone this repository:
@@ -48,10 +50,21 @@ $ cd e_market_flutter
 
 # Open the e_market_flutter with Android Studio.
 
+# Install Firebase CLI 
+$ curl -sL https://firebase.tools | bash
 
-# Install dependencies in Android Studio:
-$ firebase-ios-sdk
-$ Kingfisher
+# Install FlutterFireCLI (Make sure type this command in the project folder
+$ dart pub global activate flutterfire_cli
+
+# Install these packages 
+1. https://pub.dev/packages/firebase_core
+2. https://pub.dev/packages/firebase_auth
+3. https://pub.dev/packages/google_sign_in
+
+dependencies:
+  firebase_core: ^3.1.1
+  google_sign_in: ^6.2.1
+  firebase_auth: ^5.1.1
 
 
 # Create a Firebase project and set up the necessary configurations (Authentication, Storage and Firestore).
@@ -62,7 +75,7 @@ $ Kingfisher
 ```
 
 <p align="center">
-    //screenchots or gif
+    //screenshots or gif
 </p>
 
 <a id="technologiesused"></a>
